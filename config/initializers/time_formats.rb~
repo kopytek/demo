@@ -1,0 +1,2 @@
+Time::DATE_FORMATS[:hours_minutes_seconds] = "%H:%M:%S"
+Time::DATE_FORMATS[:ss] = "%S"

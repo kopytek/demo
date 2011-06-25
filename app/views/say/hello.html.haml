@@ -1,0 +1,20 @@
+%h1 Hello html
+%p routing z /say/hello na /hello
+%p= @time
+%p= pill_button_link_to 'Goodbye', goodbye_path
+= minor_button_group do
+  = pill_button_link_to 'Goodbye', goodbye_path
+  = negative_trash_button_link_to 'Goodbye', goodbye_path
+  = negative_pill_button_link_to 'Goodbye', goodbye_path
+  = approve_button_tag 'cos'
+  = pill_negative_trash_button_tag 'cos'
+%p 
+  wynik dodawania 
+  %strong= 1+2 
+  konkatenacja stringow
+  %strong= 'aaa' + 'cccc' 
+%p= 1.hour.from_now.to_s(:month_and_year)
+%ul
+  -for file in @files
+    %li= file
+
