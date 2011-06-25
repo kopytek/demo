@@ -1,4 +1,12 @@
 Agile::Application.routes.draw do
+  get "say/hello"
+
+  get "say/goodbye"
+
+  resources :say
+  
+  match '/hello', :to => 'say#hello'
+  match '/goodbye', :to => 'say#goodbye'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
